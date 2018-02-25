@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EurekaclientApplication {
 
 	@Value("${server.port}")
-	private String port;
+	String port;
 
 	public static void main(String[] args) {
 		SpringApplication.run(EurekaclientApplication.class, args);

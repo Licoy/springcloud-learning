@@ -1,11 +1,13 @@
 eureka:
+  instance:
+    hostname: localtion
   client:
+    # 通过register-with-eureka=false和fetch-registry=false表明自己是一个服务注册中心
+    register-with-eureka: false
+    fetch-registry: false
     service-url:
-      default-zone: http://localhost:8761/eureka/
+      default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
 server:
-  port: 7600
-spring:
-  application:
-    name: service-hello-home
+  port: 8761
 
 
