@@ -15,3 +15,5 @@ eureka:
   client:
     service-url:
       default-zone: http://localhost:8761/eureka/
+
+# TODO 添加消息总线 ERLANG SETTING
