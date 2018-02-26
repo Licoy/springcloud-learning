@@ -20,7 +20,8 @@ public class MyFilter extends ZuulFilter {
      * * routing：路由之时
      * * post： 路由之后
      * * error：发送错误调用
-     * * filterOrder：过滤的顺序
+     *
+     * filterOrder：过滤的顺序
      *
      * shouldFilter：这里可以写逻辑判断，是否要过滤。
      *
