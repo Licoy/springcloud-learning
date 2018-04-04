@@ -9,11 +9,18 @@ spring:
         service-id: config-server
       label: master
       profile: dev
+  rabbitmq:
+      host: 118.24.24.243
+      port: 5672
+      username: springcloud
+      password: 123456
 server:
   port: 8001
 eureka:
   client:
     service-url:
       default-zone: http://localhost:8761/eureka/
-
+management: # 出现“Full authentication is required to access this resource.”需加此配置
+  security:
+    enabled: false
 # TODO 添加消息总线 ERLANG SETTING
