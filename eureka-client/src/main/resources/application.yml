@@ -5,7 +5,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-#  instance:
-#    hostname: a.com
 server:
-  port: 8770
+  port: 8771
+# 负载均衡实现方式（此处改变为随机，默认为轮询）
+eureka-client-book:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

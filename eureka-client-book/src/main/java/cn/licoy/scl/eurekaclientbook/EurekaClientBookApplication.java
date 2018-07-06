@@ -1,16 +1,14 @@
-package cn.licoy.scl.eurekaclient;
+package cn.licoy.scl.eurekaclientbook;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients
-public class EurekaClientApplication {
+public class EurekaClientBookApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaClientApplication.class, args);
+        SpringApplication.run(EurekaClientBookApplication.class, args);
     }
 }

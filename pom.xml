@@ -6,10 +6,14 @@
     <groupId>cn.licoy</groupId>
     <artifactId>spring-cloud-learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>spring-cloud-learning</name>
     <description>spring-cloud-learning</description>
+
+    <modules>
+        <module>eureka-server</module>
+    </modules>
 
     <build>
         <plugins>
