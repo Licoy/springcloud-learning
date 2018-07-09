@@ -1,16 +1,14 @@
 spring:
   application:
-    name: config-server
+    name: book
   cloud:
     config:
-      server:
-        git:
-          uri: https://github.com/Licoy/spring-cloud-config-repo
-          username:
-          password:
-#          basedir:
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER
+      profile: dev
   rabbitmq:
-    host: 
+    host:
     port: 5672
     username: admin
     password: 123456
