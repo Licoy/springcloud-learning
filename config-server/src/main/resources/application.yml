@@ -8,9 +8,9 @@ spring:
           uri: https://github.com/Licoy/spring-cloud-config-repo
           username:
           password:
-#          basedir:
+          basedir: F:\dev\java\springcloud-learning\basedir
   rabbitmq:
-    host: 
+    host:
     port: 5672
     username: admin
     password: 123456
@@ -23,3 +23,5 @@ management:
     web:
       exposure:
         include: "*"
+server:
+  port: 8080

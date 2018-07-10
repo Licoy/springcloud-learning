@@ -7,6 +7,10 @@ spring:
         enabled: true
         service-id: CONFIG-SERVER
       profile: dev
+    stream:
+      binders:
+        book:
+          group: book
   rabbitmq:
     host:
     port: 5672
